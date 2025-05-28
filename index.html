@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Universal - Notificación Urgente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8; /* Fondo para el "cliente de correo" */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .email-preview {
+            width: 100%;
+            max-width: 650px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .email-header {
+            background-color: #0056b3; /* Color corporativo del banco */
+            color: white;
+            padding: 20px 25px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .email-body {
+            padding: 30px;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .email-body p {
+            margin-bottom: 18px;
+        }
+        .action-button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .action-button {
+            display: inline-block;
+            background-color: #007bff; /* Azul vibrante */
+            color: white;
+            padding: 14px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+        .email-footer {
+            background-color: #f5f5f5;
+            color: #777;
+            font-size: 13px;
+            padding: 20px 25px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .disclaimer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px dashed #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-preview">
+        <div class="email-header">
+            Alerta de Seguridad - Banco Universal
+        </div>
+        <div class="email-body">
+            <p>Estimado(a) Cliente,</p>
+            <p>Le escribimos para informarle sobre una actividad inusual detectada en su cuenta de Banco Universal. Para proteger sus fondos y datos personales, hemos suspendido temporalmente el acceso a su banca en línea hasta que verifique su identidad.</p>
+            <p>Por
