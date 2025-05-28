@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Universal - Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 380px;
+            box-sizing: border-box;
+        }
+        .logo-bank {
+            margin-bottom: 25px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #0056b3; /* Azul del banco */
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 24px;
+        }
+        .input-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+            font-size: 15px;
+        }
+        .input-group input {
+            width: calc(100% - 24px); /* Ancho completo menos padding */
+            padding: 12px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+        .disclaimer {
+            margin-top: 35px;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px dashed #eee;
+            padding-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-bank">
+            Banco Universal
+        </div>
+        <h2>Acceso a Banca en Línea</h2>
+        <form action="simulacion_exitosa.html" method="GET"> 
+            <div class="input-group">
+                <label for="usuario">Usuario / DNI:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ej: su.usuario@correo.com o 12345678X" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p class="disclaimer">
+            Nota para la tarea: Esto es una simulación de phishing.
+            ¡NO ingrese sus datos reales aquí bajo ninguna circunstancia!
+        </p>
+    </div>
+</body>
+</html>
